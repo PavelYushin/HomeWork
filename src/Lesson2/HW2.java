@@ -4,10 +4,10 @@ public class HW2 {
     public static void main(String[] args) {
         System.out.println(doTask1(2, 8));
         doTask2(10);
-        System.out.println(doTask3(-5));
+        System.out.println(doTask3(5));
         doTask4("Ivan", 5);
 
-        System.out.println(doTask5(1983)); // Task 5*
+        System.out.println(doTask5(1984)); // Task 5*
     }
 
     public static boolean doTask1(int a, int b) {
