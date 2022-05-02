@@ -103,4 +103,5 @@ public class HW3 {
         System.out.println(max);
         System.out.println(min);
     }
+
 }
