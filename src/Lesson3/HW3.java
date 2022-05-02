@@ -5,7 +5,7 @@ public class HW3 {
         int[] arr1 = {1, 1, 0, 0, 1, 0, 1, 1, 0, 0}; // Array for task 1
         int[] arr3 = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1}; // Array for task 3
         int[] arr6 = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1}; // Array for task 6
-        int[] arr7 = {1, 1, 2, 2}; // Array for task 7
+
         System.out.println("Task 1: ");
         doTask1(arr1); // Task 1 check
         System.out.println("\nTask 2: ");
@@ -18,8 +18,7 @@ public class HW3 {
         doTask5(5, 1); // Task 5 check
         System.out.println("\nTask 6: ");
         doTask6(arr6); // Task 6 check
-        System.out.println("\nTask 7: ");
-        System.out.println(doTask7(arr7)); // Task 7 check
+
     }
 
     // Заменить 0 на 1, 1 на 0;
@@ -86,7 +85,7 @@ public class HW3 {
         }
     }
 
-    // 6 * Задать одномерный массив и найти в нем минимальный и максимальный элементы
+    // 6 * Задать одномерный массив и найти в нем минимальный и максимальный значения элементов;
     public static void doTask6( int[] arr){
         int max = arr[0];
         int min = arr[0];
@@ -104,26 +103,5 @@ public class HW3 {
         System.out.println(max);
         System.out.println(min);
     }
-
-    /* 7 ** Написать метод, в который передается не пустой одномерный целочисленный массив,
-    метод должен вернуть true, если в массиве есть место, в котором сумма левой и правой части массива равны.
-     */
-    public static boolean doTask7 ( int[] arr){
-        int rightSum = 0;
-        int leftSum = 0;
-        // Нахожу сумму всех элементов
-        for (int i = 0; i < arr.length; i++) {
-            rightSum += arr[i];
-        }
-        //Перебираю сумму с начала массива и сравниваю с разницей (правой частью)
-        for (int i = 0; i < arr.length; i++) {
-            leftSum += arr[i];
-            if (leftSum == rightSum - leftSum) {
-                return true;
-            }
-        }
-        return false;
-    }
-
 
 }
